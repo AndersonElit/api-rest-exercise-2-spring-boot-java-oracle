@@ -45,8 +45,8 @@ public class Repositorio implements RepositorioInt {
 				while (rs.next()) {
 					Modelo cliente = new Modelo();
 					cliente.setId(rs.getInt("ID_PERSONA"));
-					cliente.setCedula(rs.getInt("CEDULA"));
-					cliente.setTelefono(rs.getInt("TELEFONO"));
+					cliente.setCedula(rs.getLong("CEDULA"));
+					cliente.setTelefono(rs.getLong("TELEFONO"));
 					cliente.setDireccion(rs.getString("DIRECCION"));
 					cliente.setPrimerNombre(rs.getString("PRIMER_NOMBRE"));
 					cliente.setSegundoNombre(rs.getString("SEGUNDO_NOMBRE"));
